@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PHQ-9 Selesai</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="flex items-center bg-background-light p-4 pb-2 justify-between sticky top-0 z-10">
+<button class="text-slate-800 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-slate-800 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Kuesioner Selesai</h1>
+<div class="size-10 shrink-0"></div> 
+</header>
+<main class="flex flex-col flex-grow px-4">
+<div class="flex flex-col gap-2 pt-4 pb-8">
+<div class="flex gap-6 justify-between">
+<p class="text-slate-600 text-sm font-medium leading-normal font-display">Langkah 9 dari 9</p>
+</div>
+<div class="rounded-full bg-slate-200 h-2">
+<div class="h-2 rounded-full bg-primary" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center flex-grow text-center">
+<div class="flex items-center justify-center w-24 h-24 bg-primary/20 rounded-full mb-8">
+<span class="material-symbols-outlined text-primary text-5xl">check_circle</span>
+</div>
+<h2 class="text-slate-900 tracking-tight text-3xl font-bold leading-tight font-display mb-3">Terima kasih.</h2>
+<h3 class="text-slate-800 tracking-tight text-2xl font-bold leading-tight font-display">Anda telah menyelesaikan semua pertanyaan.</h3>
+<p class="text-slate-600 text-base font-normal leading-normal mt-4 max-w-md">Tekan tombol di bawah untuk melihat hasil skrining Anda.</p>
+</div>
+</main>
+<footer class="p-4 pt-8 sticky bottom-0 bg-background-light">
+<p class="text-slate-500 text-xs font-normal leading-normal text-center mb-4">Ingat, hasil ini bukan diagnosis medis. Konsultasikan dengan profesional kesehatan untuk evaluasi lebih lanjut.</p>
+<button class="flex items-center justify-center w-full h-12 px-6 bg-primary text-white rounded-xl font-bold text-base leading-normal hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary/30 transition-all font-display">Lihat Hasil</button>
+</footer>
+</div>
+
+</body></html>
