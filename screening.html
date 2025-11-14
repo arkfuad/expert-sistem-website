@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Depression Screening (PHQ-9)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4DB6AC", // Soft teal for accent
+              "background-light": "#F7F8FA", // Lighter gray for a cleaner look
+              "card-light": "#FFFFFF",
+              "text-light": "#101922",
+              "text-muted-light": "#6b7280",
+              "border-light": "#E5E7EB",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }.custom-radio:checked {
+        background-color: #4DB6AC;border-color: #4DB6AC;}
+      .custom-radio:checked:hover {
+        background-color: #4DB6AC;
+        border-color: #4DB6AC;
+      }
+      .custom-radio:focus {
+        ring: 2px;
+        ring-color: #4DB6AC;
+        ring-offset: 2px;
+      }
+      .custom-radio {
+        background-image: none !important;
+      }
+      .custom-radio:checked {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e") !important;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="sticky top-0 z-10 flex items-center justify-between border-b border-border-light bg-background-light p-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-text-light hover:bg-gray-100">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-tight text-text-light">Depression Screening (PHQ-9)</h1>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-text-light hover:bg-gray-100">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+</div>
+<main class="flex flex-col flex-grow p-4 md:p-6 lg:p-8">
+<div class="mx-auto w-full max-w-2xl">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<p class="text-sm font-medium leading-normal text-text-muted-light">Question 3 of 9</p>
+</div>
+<div class="h-2 w-full rounded-full bg-gray-200">
+<div class="h-2 rounded-full bg-primary" style="width: 33%;"></div>
+</div>
+</div>
+<h2 class="text-text-light tracking-tight text-2xl md:text-3xl font-bold leading-tight text-left pt-8 pb-2">
+                    Over the last 2 weeks, how often have you been bothered by any of the following problems?
+                </h2>
+<div class="mt-6 rounded-xl bg-card-light shadow-sm border border-border-light">
+<div class="p-6">
+<p class="text-text-light text-lg font-medium leading-normal">
+                            Trouble falling or staying asleep, or sleeping too much?
+                        </p>
+<div class="flex flex-col gap-3 pt-6">
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-solid border-border-light p-4 has-[:checked]:border-primary has-[:checked]:bg-primary/10 transition-colors">
+<input class="custom-radio h-5 w-5 appearance-none rounded-full border-2 border-border-light bg-transparent focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-card-light" name="phq9_question_3" type="radio" value="0"/>
+<span class="flex-grow text-base font-medium leading-normal text-text-light">Not at all</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-solid border-border-light p-4 has-[:checked]:border-primary has-[:checked]:bg-primary/10 transition-colors">
+<input checked="" class="custom-radio h-5 w-5 appearance-none rounded-full border-2 border-border-light bg-transparent focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-card-light" name="phq9_question_3" type="radio" value="1"/>
+<span class="flex-grow text-base font-medium leading-normal text-text-light">Several days</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-solid border-border-light p-4 has-[:checked]:border-primary has-[:checked]:bg-primary/10 transition-colors">
+<input class="custom-radio h-5 w-5 appearance-none rounded-full border-2 border-border-light bg-transparent focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-card-light" name="phq9_question_3" type="radio" value="2"/>
+<span class="flex-grow text-base font-medium leading-normal text-text-light">More than half the days</span>
+</label>
+<label class="flex cursor-pointer items-center gap-4 rounded-lg border border-solid border-border-light p-4 has-[:checked]:border-primary has-[:checked]:bg-primary/10 transition-colors">
+<input class="custom-radio h-5 w-5 appearance-none rounded-full border-2 border-border-light bg-transparent focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-card-light" name="phq9_question_3" type="radio" value="3"/>
+<span class="flex-grow text-base font-medium leading-normal text-text-light">Nearly every day</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 mt-auto bg-background-light p-4 border-t border-border-light">
+<div class="mx-auto flex max-w-2xl items-center justify-between gap-4">
+<button class="flex-shrink-0 cursor-pointer rounded-full px-6 py-3 text-base font-bold leading-normal text-text-muted-light hover:bg-gray-200 transition-colors">
+                    Back
+                </button>
+<button class="flex-grow cursor-pointer rounded-full bg-primary px-6 py-3 text-base font-bold leading-normal text-white shadow-sm hover:bg-primary/90 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                    Next
+                </button>
+</div>
+</footer>
+</div>
+
+</body></html>
